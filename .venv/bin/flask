@@ -1,4 +1,4 @@
-#!/home/usuario/Escritorio/Backend-blockbuster/.venv/bin/python3
+#!/home/penascalf5/Escritorio/Backend-blockbuster/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

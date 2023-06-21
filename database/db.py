@@ -9,7 +9,6 @@ def connectdb():
             password='npt4hAheAG9gcLJ9TpGy',
             database='Blockbuster'
     )
-        cur = conn.cursor()
         print('Connecting to Blockbuster')
 
     except Exception as e:

@@ -1,6 +1,7 @@
 from flask import Flask
 from routes.empleados import *
 from routes.cliente import *
+from routes.films import *
 
 app = Flask(__name__)
 
@@ -13,6 +14,12 @@ app.route("/empleado/<int:id_empleado>", methods=["PATCH"])(update_empleado)
 
 # Roots cliente nueva
 app.route('/cliente_add', methods=['POST'])(add_cliente)
+
+
+
+# Path Movies
+app.route('films_add', methods = ['POST'])(add_films)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

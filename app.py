@@ -15,6 +15,7 @@ app.route("/empleado/<int:id_empleado>", methods=["PATCH"])(update_empleado)
 app.route('/cliente_add', methods=['POST'])(add_cliente)
 app.route('/clientes', methods=['GET'])(get_clientes)
 app.route('/clientes/<int:id_cliente>', methods=['GET'])(obtener_cliente_por_id)
+app.route('/clientes_del/<int:id_cliente>', methods=['DELETE'])(del_cliente)
 
 if __name__ == '__main__':
     app.run(debug=True)

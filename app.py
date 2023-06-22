@@ -11,7 +11,7 @@ app.route('/empleado/<int:id_empleado>')(obtener_empleado_por_id)
 app.route('/empleados_del/<int:id_empleado>', methods=['DELETE'])(del_empleado)
 app.route("/empleado/<int:id_empleado>", methods=["PATCH"])(update_empleado)
 
-# Rutas cliente nueva
+# Roots cliente nueva
 app.route('/cliente_add', methods=['POST'])(add_cliente)
 
 if __name__ == '__main__':

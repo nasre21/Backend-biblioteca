@@ -20,3 +20,12 @@ def add_films():
     conn.close()
     print('films created')
     return "Films add"
+
+def get_films():
+    conn = connectdb()
+    cur = conn.cursor()
+    cur.execute('SELECT * FROM peliculas')
+    datos_films = cur.fetchall()
+    data = [{'id_pelicula': dato[0],'titulo':dato[1], 'año':dato[2], 'director':dato[3], 'categoria':dato[4], } for dato in datos_films]
+    
+    

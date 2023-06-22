@@ -19,6 +19,8 @@ app.route('/cliente_add', methods=['POST'])(add_cliente)
 
 # Path Movies
 app.route('films_add', methods = ['POST'])(add_films)
+app.route('/films', methods=['GET'])(get_films)
+
 
 
 if __name__ == '__main__':
